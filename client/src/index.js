@@ -1,6 +1,7 @@
 // import 'materialize-css/dist/css/materialize.min.css';
-import './res/css/style.css';
-import "./res/css/icon-font.css";
+// import './public/style.css';
+// import './res/css/style.css';
+// import "./res/css/icon-font.css";
 
 import React from 'react';
 import ReactDOM from 'react-dom';

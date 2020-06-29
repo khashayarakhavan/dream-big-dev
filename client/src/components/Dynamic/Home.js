@@ -12,7 +12,7 @@ import getFacts from "./facts";
    
      const output = props.facts.map((fact, index) => {
        return <li
-         key={index}>{fact.text}</li>
+         key={index} >{fact.text}</li>
      });
    
    // console.log(getFacts().text);
@@ -25,6 +25,9 @@ import getFacts from "./facts";
    // console.log(data);
    
   //  console.log('from Home :D ', props.facts);
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  });
 
    // Similar to componentDidMount and componentDidUpdate:
 
@@ -40,9 +43,11 @@ import getFacts from "./facts";
       <p>You clicked {count} times</p>
       
       <button onClick={() => setCount(count +1) }>Click me</button>
+    <div className={"firebase"}>
     <ul>
      {output}
     </ul>
+    </div>
     
     </div>
     );
