@@ -1,10 +1,10 @@
 
+import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
-import _ from 'lodash';
+import { withRouter } from 'react-router-dom';
+import * as actions from '../../actions'; // import all actions and destructure the one you want in props
 import FIELDS from './formFields';
-import * as actions from '../../actions';
-import { withRouter} from 'react-router-dom';
 
 const SurveyFormReview = ({ onBack, formValues, submitSurvey, history}) => {
     const reviewFields = _.map(FIELDS, ({ label, name }) => {
